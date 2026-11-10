@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GLA In The News</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        /* News Section */
+        .news-section {
+            background-color: #eeeeee;
+            padding: 50px 30px;
+            text-align: center;
+        }
+
+        .news-section h1 {
+            font-size: 30px;
+            margin-bottom: 35px;
+            color: #222;
+        }
+
+        /* News Cards */
+        .news-container {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .news-card {
+            background-color: white;
+            width: 300px;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: left;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            height: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .economic {
+            font-family: Georgia, serif;
+            font-weight: normal;
+        }
+
+        .money {
+            color: white;
+            background: linear-gradient(to right, green 50%, blue 50%);
+            padding: 12px;
+            border-radius: 5px;
+        }
+
+        .vccircle {
+            font-size: 35px;
+            font-style: italic;
+        }
+
+        .date {
+            color: #52749d;
+            font-size: 13px;
+            margin: 10px 0;
+        }
+
+        .news-card h3 {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        .news-card p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #888;
+        }
+
+        /* See More Button */
+        .see-more {
+            margin-top: 30px;
+            padding: 10px 20px;
+            border: 1px solid #bbb;
+            background: transparent;
+            color: #a45d68;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Investors Section */
+        .investors {
+            background-color: white;
+            padding: 35px 30px 50px;
+            text-align: center;
+        }
+
+        .investors h2 {
+            font-size: 25px;
+            margin-bottom: 25px;
+            color: #222;
+        }
+
+        .investor-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .investor-box {
+            width: 290px;
+            height: 90px;
+            border: 1px solid #eeeeee;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            font-size: 28px;
+        }
+
+        .unitus {
+            color: #333;
+        }
+
+        .unitus span {
+            color: #e17b91;
+            font-size: 17px;
+            display: block;
+        }
+
+        .om {
+            color: #3276b8;
+            font-weight: bold;
+        }
+
+        .india {
+            color: #bd925d;
+            font-size: 23px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- News Section -->
+    <section class="news-section">
+
+        <h1>GLA In The News</h1>
+
+        <div class="news-container">
+
+            <div class="news-card">
+
+                <div class="logo economic">
+                    THE ECONOMIC TIMES
+                </div>
+
+                <div class="date">21 Dec 2021</div>
+
+                <h3>
+                    Edtech startup GLA University
+                    acquires data analytics firm
+                    Prepleaf for $1 million.
+                </h3>
+
+                <p>
+                    With their latest acquisition,
+                    GLA University moves one step
+                    closer to becoming...
+                </p>
+
+            </div>
+
+            <div class="news-card">
+
+                <div class="logo">
+                    <span class="money">
+                        moneycontrol
+                    </span>
+                </div>
+
+                <div class="date">26 Oct 2021</div>
+
+                <h3>
+                    Kunal Shah, Vijay Shekhar
+                    Sharma, Amrish Rau among 21
+                    angel investors in GLA University
+                </h3>
+
+                <p>
+                    GLA University is aiming to expand
+                    to 20 smaller cities by March 2022 and...
+                </p>
+
+            </div>
+
+            <div class="news-card">
+
+                <div class="logo vccircle">
+                    VCCIRCLE
+                </div>
+
+                <div class="date">18 Aug 2020</div>
+
+                <h3>
+                    Unitus Ventures leads pre-Series A
+                    funding for coding-focused
+                    GLA University
+                </h3>
+
+                <p>
+                    Software coding platform GLA
+                    University has raised $2.5 million
+                    (Rs 18.6 crore) in...
+                </p>
+
+            </div>
+
+        </div>
+
+        <button class="see-more">
+            SEE MORE &nbsp; ›
+        </button>
+
+    </section>
+
+
+    <!-- Investors Section -->
+    <section class="investors">
+
+        <h2>Our Investors, Who Believe In Us</h2>
+
+        <div class="investor-container">
+
+            <div class="investor-box">
+                <div class="unitus">
+                    unitus
+                    <span>ventures</span>
+                </div>
+            </div>
+
+            <div class="investor-box">
+                <div class="om">
+                    ◉N
+                    <small style="font-size: 12px; color: #555;">
+                        OMIDYAR<br>NETWORK INDIA
+                    </small>
+                </div>
+            </div>
+
+            <div class="investor-box">
+                <div class="india">
+                    ◈ IndiaQuotient
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
