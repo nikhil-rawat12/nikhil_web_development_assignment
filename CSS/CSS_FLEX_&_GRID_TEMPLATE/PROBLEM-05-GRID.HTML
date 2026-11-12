@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        grid-template-rows: 100px 100px 100px;
+        grid-template-areas: "a b b c"
+                             "d d e f"
+                             "g h i i" ;
+        gap: 15px;
+        width: 600px;
+        margin: 30px auto;
+    }
+    .box{
+        background-color: green;
+        
+    }                         
+    .a{
+        grid-area: a;
+    }
+    .b{
+        grid-area: b;
+    }
+    .c{
+        grid-area: c;
+    }
+    .d{
+        grid-area: d;
+    }
+    .e{
+        grid-area: e;
+    }
+    .f{
+        grid-area: f;
+    } 
+    .g{
+        grid-area: g;
+
+    }
+    .h{
+        grid-area: h;
+    }
+    .i{
+        grid-area: i;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box a"></div>
+        <div class="box b"></div>
+        <div class="box c"></div>
+        <div class="box d"></div>
+        <div class="box e"></div>
+        <div class="box f"></div>
+        <div class="box g"> </div>
+        <div class="box h "></div>
+        <div class="box i"></div>
+    </div>
+</body>
+</html>
