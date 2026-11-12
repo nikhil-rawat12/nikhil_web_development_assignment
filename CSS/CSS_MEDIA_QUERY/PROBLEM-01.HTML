@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 60px 200px;
+        gap: 15px;
+        grid-template-areas: "nav nav nav nav"
+                             "box1 box2 box3 box4";
+    }
+    .nav{
+        grid-area: nav;
+        background-color: yellow;
+        font-size: 30px;
+    }
+    .box1{
+        grid-area: box1;
+        background-color: red;
+    }
+    .box2{
+        grid-area: box2;
+        background-color: lime;
+    }
+    .box3{
+        grid-area: box3;
+        background-color: blue;
+    }
+    .box4{
+        grid-area: box4;
+        background-color: grey;
+    }
+    @media screen and (max-width:768px){
+        .container{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 60px 200px 200px;
+            grid-template-areas: "nav nav"
+                                 "box1 box3"
+                                 "box2 box4"     ;
+        }
+        
+    }
+    @media screen and (max-width:480px) {
+        .container{
+            grid-template-columns:1fr;
+            grid-template-rows: 60px repeat(4,150px);
+            grid-template-areas: "nav"
+                                 "box1"
+                                 "box2"
+                                 "box3"
+                                 "box4";
+        }
+        
+    }
+
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">navigation</div>
+        <div class="box1">box 1</div>
+        <div class="box2">box 2</div>
+        <div class="box3">box 3</div>
+        <div class="box4">box 4</div>
+    </div>
+</body>
+</html>
