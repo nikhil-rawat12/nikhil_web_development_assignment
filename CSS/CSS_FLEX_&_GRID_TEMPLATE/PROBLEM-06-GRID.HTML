@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+        height: 1000px;
+        display: grid;
+        place-items: center;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,55px);
+        gap: 10px;
+        grid-template-areas: "a a a a"
+                             "b c d e"
+                             "f g h i"
+                             "j k l m"
+                             "n o p q" ;
+        box-shadow: 0 0px 2px lightgrey;
+        width: 350px;
+        text-align: center;              
+    }
+    .box{
+        color: black;
+        border-radius: 20px;
+        background-color: whitesmoke;
+        padding: 20px;
+        box-shadow: 2px 2px 2px lightgrey;
+        
+       
+    }
+    .a{
+       grid-area: a;
+    }    
+    .b{
+        grid-area: b;
+    } 
+    .c{
+        grid-area: c;
+    }               
+    .d{
+        grid-area: d;
+    }    
+    .e{
+        background-color: black;
+        color: aliceblue;
+        grid-area: e;
+    } 
+    .f{
+        grid-area: f;
+    }
+    .g{
+        grid-area: g;
+    }
+    .h{
+        grid-area: h;
+    }
+    .i{
+        background-color: black;
+        color: aliceblue;
+        grid-area: i;
+    }
+    .j{
+        grid-area: j;
+    }
+    .k{
+        grid-area: k;
+    }
+    .l{
+        grid-area: l;
+    }
+    .m{
+        background-color: black;
+        color: aliceblue;
+        grid-area: m;
+    }
+    .n{
+        background-color: red;
+        color: aliceblue;
+        grid-area: n;
+    }
+    .o{
+        grid-area: o;
+    }
+    .p{
+        background-color: black;
+        color: aliceblue;  
+        grid-area: p;
+    }
+    .q{
+        background-color: black;
+        color: aliceblue;
+        grid-area: q;
+    }
+  </style>
+</head>
+<body>
+   <div class="container">
+    
+    <div class="box a"></div>
+    <div class="box b">1</div>
+    <div class="box c">2</div>
+    <div class="box d">3</div>
+    <div class="box e">+</div>
+    <div class="box f">4</div>
+    <div class="box g">5</div>
+    <div class="box h">6</div>
+    <div class="box i">-</div>
+    <div class="box j">7</div>
+    <div class="box k">8</div>
+    <div class="box l">9</div>
+    <div class="box m">x</div>
+    <div class="box n">c</div>
+    <div class="box o">0</div>
+    <div class="box p">=</div>
+    <div class="box q">/</div>
+   </div> 
+</body>
+</html>
