@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+        grid-template-areas: "nav nav "
+                             "box3 box4" ;
+    }
+    .nav{
+        grid-area: nav;
+        background-color: yellow;
+        font-size: 30px;
+
+    }
+    .box3{   
+        grid-area: box3;
+        background-color: red;
+        height: 400px;
+        width: 100%;
+    }
+    .box4{
+        grid-area: box4;
+        background-color: lime;
+    }
+
+    @media screen and (max-width:768px){
+        .container{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 60px 200px 200px;
+            grid-template-areas: "nav nav"
+                                 "box3 box3"
+                                 "box4 box4"     ;
+        }
+        
+    }
+ 
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">navigation</div>
+       
+        <div class="box3">box 3</div>
+        <div class="box4">box 4</div>
+    </div>
+</body>
+</html>
