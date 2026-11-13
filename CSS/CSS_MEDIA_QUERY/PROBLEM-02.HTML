@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .heading{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .heading h2{
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        .heading p{
+            font-size: 13px;
+            width: 400px;
+            margin: auto;
+            color: grey;
+        }
+        .doctors{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            width: 90%;
+            margin: auto;
+        }
+        .card img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .card h3{
+            font-size: 16px;
+            margin-top: 12px;
+        }
+        .card h5{
+            font-size: 10px;
+            margin: 8px;
+        }
+        .card p{
+            font-size: 12px;
+            padding: 10px;
+            color: grey;
+        }
+        .links{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+            padding: 10px;
+            font-size: 12px;
+        }
+        .book{
+            background-color: tomato;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+        .services{
+            width: 90%;
+            margin-top: 50px auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 35px;
+        }
+        .service{
+            text-align: center;
+            padding: 15px;
+        }
+        .service h2{
+            color:#55a5ad;
+            font-size: 35px;
+
+        }
+        .service h4{
+            margin: 10px;
+            font-size: 14px;
+        }
+        .service p{
+            font-family: 12px;
+            color: grey;
+        }
+        @media  screen and (max-width:768px) {
+            .doctors{
+            grid-template-columns:repeat(2,1fr);}
+            .services{
+                grid-template-columns: repeat(2,1fr);
+            }
+            
+        }
+        @media screen and (max-width:468px){
+            body{
+                padding: 15px;
+            }
+            .heading p{
+                width: 100%;
+            }
+            .doctors{
+                grid-template-columns: 1fr;
+            }
+            .services{
+                grid-template-columns: 1fr;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="heading">
+        <h2>Our Specialist</h2>
+        <p>Green above the cattle god saw dairy multiply under fill
+        in the cattle fowl a all, living, tree and link available
+        in the service for subdue fruit.</p>
+    </div>
+
+    <div class="doctors">
+
+        <div class="card">
+            <img src="https://png.pngtree.com/png-clipart/20231002/original/pngtree-young-afro-professional-doctor-png-image_13227671.png">
+            <h3>ETHEL DAVIS</h3>
+            <h5>SR. FACULTY BATCHING</h5>
+            <p>If you are looking at blank cassettes on the web,
+            you may be very confused at the.</p>
+            <div class="links">
+                <span>Know More</span>
+                <span class="book">Book Now</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDI0LTA4L2hpcHBvdW5pY29ybl9hX3Bob3RvX29mX2FfbWlkZGxlX2FnZV9tYWxlX2luZGlhbl9kb2N0b3JfaXNvbGF0ZV9jZTVhYzE3YS1iNjk4LTQyYmMtODI3ZS03MTJjZDNlYWU2OWYtMl8xLnBuZw.png">
+            <h3>DAND MORIES</h3>
+            <h5>SR. FACULTY SURGERY</h5>
+            <p>If you are looking at blank cassettes on the web,
+            you may be very confused at the.</p>
+            <div class="links">
+                <span>Know More</span>
+                <span class="book">Book Now</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://img.magnific.com/free-photo/african-american-black-doctor-man-with-stethoscope-isolated-white-background_231208-2222.jpg?semt=ais_hybrid&w=740&q=80">
+            <h3>ALIGN BOARD</h3>
+            <h5>SR. FACULTY PLASTIC SURGERY</h5>
+            <p>If you are looking at blank cassettes on the web,
+            you may be very confused at the.</p>
+            <div class="links">
+                <span>Know More</span>
+                <span class="book">Book Now</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://img.magnific.com/free-photo/handsome-young-male-doctor-with-stethoscope-standing-against-blue-background_662251-343.jpg?semt=ais_hybrid&w=740&q=80">
+            <h3>JESON LIMIT</h3>
+            <h5>SR. FACULTY PLASTIC SURGERY</h5>
+            <p>If you are looking at blank cassettes on the web,
+            you may be very confused at the.</p>
+            <div class="links">
+                <span>Know More</span>
+                <span class="book">Book Now</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="services">
+
+        <div class="service">
+            <h2>♧</h2>
+            <h4>Teeth Whitening</h4>
+            <p>In pretium neque a libero congue.
+            Elit diam lectus. Praesent lacinia vitae
+            sit amet mollis maximus.</p>
+        </div>
+
+        <div class="service">
+            <h2>⌕</h2>
+            <h4>Teeth Whitening</h4>
+            <p>In pretium neque a libero congue.
+            Elit diam lectus. Praesent lacinia vitae
+            sit amet mollis maximus.</p>
+        </div>
+
+        <div class="service">
+            <h2>♧</h2>
+            <h4>Teeth Whitening</h4>
+            <p>In pretium neque a libero congue.
+            Elit diam lectus. Praesent lacinia vitae
+            sit amet mollis maximus.</p>
+        </div>
+
+        <div class="service">
+            <h2>♧</h2>
+            <h4>Teeth Whitening</h4>
+            <p>In pretium neque a libero congue.
+            Elit diam lectus. Praesent lacinia vitae
+            sit amet mollis maximus.</p>
+        </div>
+
+        <div class="service">
+            <h2>⌕</h2>
+            <h4>Teeth Whitening</h4>
+            <p>In pretium neque a libero congue.
+            Elit diam lectus. Praesent lacinia vitae
+            sit amet mollis maximus.</p>
+        </div>
+
+        <div class="service">
+            <h2>♧</h2>
+            <h4>Teeth Whitening</h4>
+            <p>In pretium neque a libero congue.
+            Elit diam lectus. Praesent lacinia vitae
+            sit amet mollis maximus.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
