@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        width: 80%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        
+        gap: 15px;
+        grid-template-areas: "nav nav nav nav "
+                             "box box box box1"
+                             "box box box box2"
+                             "box box box box3";
+    }
+    .nav{
+        grid-area: nav;
+        background-color: yellow;
+        font-size: 30px;
+    }
+    .box{
+        grid-area: box;
+        background-color: red;
+        height: 400px;
+    }
+    .box1{
+        grid-area: box1;
+        background-color: lime;
+    }
+    .box2{
+        grid-area: box2;
+        background-color:lime;
+    }
+    .box3{
+        grid-area: box3;
+        background-color: lime;
+    }
+    @media screen and (max-width:768px){
+        .container{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 60px 200px 200px;
+            grid-template-areas: "nav nav nav"
+                                 "box box box"
+                                 "box1 box2 box3"     ;
+        }
+        
+    }
+    @media screen and (max-width:480px) {
+        .container{
+            grid-template-columns:1fr;
+            grid-template-rows: 60px repeat(5,150px);
+            grid-template-areas: "nav"
+                                 "box"
+                                 "box1"
+                                 "box2"
+                                 "box3";
+        }
+        
+    }
+
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">NAVIGATION</div>
+        <div class="box">LEFT BOX</div>
+        <div class="box1">RIGHT BOX 1</div>
+        <div class="box2">RIGHT BOX 2</div>
+        <div class="box3">RIGHT BOX 3</div>
+    </div>
+</body>
+</html>
